@@ -24,6 +24,11 @@ $(document).on('mobileinit', function() {
 });
 
 </script>
+<script>
+$(document).bind("bobileinit", function() {
+    $.mobile.page.prototype.options.addBackBtn = true;
+});
+</script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <style type="text/css">
 .ui-header .ui-title {
@@ -49,7 +54,8 @@ $(document).on('mobileinit', function() {
 <body>
 <!----------トップページ--------------->
 <div data-role="page" id="home">
-	<div data-role="header">
+	<div data-role="header"> 
+    <a href="" data-rel="back">戻る</a>
 		<h1>Comming Soon!</h1>
 	</div>
 	<div role="main" class="ui-content">
